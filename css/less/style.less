@@ -5,10 +5,10 @@
 }
 
 .sidebar {
-//  position: absolute;
-//  top: 0;
-//  bottom: 0;
-//  left: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
   padding: 0;
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
@@ -128,10 +128,39 @@
   }
 }
 
+.comp-table {
+  margin: 20px 15px;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background: #fff;
+    font-family: @font;
+    font-weight: 300;
+    font-size: 15px;
+    th {
+      color: @green;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      padding: 8px;
+      font-weight: 400;
+    }
+    tr {
+      td {
+        padding: 12px 8px;
+        border-top: 1px solid #ddd;
+      }
+      &:first-child {
+        td {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
 footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+
   p {
     text-align: center;
     color: darken(@cloud, 20%);
