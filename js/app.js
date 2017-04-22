@@ -43,7 +43,7 @@ $('#createComp').click(function () {
   // collect data and prepare to send
   var jsonToSend = {
     "compName": $('input[name=name]').val(),
-    "singles": $('input[name=singles]:checked').val(),
+    "singlesDoubles": $('input[name=singlesDoubles]:checked').val(),
     "type": $('select[name=type]').val(),
     "players": playerNames
   }
