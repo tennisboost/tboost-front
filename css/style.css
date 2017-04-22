@@ -123,6 +123,16 @@ label {
   color: black;
   font-weight: 400;
 }
+.removePlayerBtn {
+  padding: 11px 15px;
+  cursor: pointer;
+}
+.removePlayerBtn:hover {
+  color: red;
+}
+.addedPlayerField {
+  margin-bottom: 16px;
+}
 footer p {
   text-align: center;
   color: #b5c0cb;
