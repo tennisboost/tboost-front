@@ -106,7 +106,7 @@ table th {
   text-align: left;
   border-bottom: 1px solid #ddd;
   padding: 8px;
-  font-weight: 400;
+  font-weight: 500;
 }
 table tr td {
   padding: 12px 8px;
@@ -118,6 +118,10 @@ table tr:first-child td {
 label {
   font-weight: 600;
   color: #615FF6;
+}
+.inline {
+  color: black;
+  font-weight: 400;
 }
 footer p {
   text-align: center;
