@@ -78,46 +78,54 @@
       <div class="sep"></div>
       <div class="row">
         <div class="medium-11 card">
-          <div class="card-head row">
-            <h3>Complete Tennis Bowral</h3>
-          </div>
-          <div class="comp-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Competition</th>
-                  <th>Players</th>
-                  <th>Comp Type</th>
-                  <th>Manage</th>
-                </tr>
-              </thead>
+          <h3>Complete Tennis Bowral</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Competition</th>
+                <th>Players</th>
+                <th>Comp Type</th>
+              </tr>
+            </thead>
 
-              <tbody>
-                <tr>
-                  <td>Thursday Night Men's Singles</td>
-                  <td>22</td>
-                  <td>Single Elimination</td>
-                  <td><a href="#">Manage</a></td>
-                </tr>
-                <tr>
-                  <td>Mixed Doubles</td>
-                  <td>16</td>
-                  <td>Round Robin</td>
-                  <td><a href="#">Manage</a></td>
-                </tr>
-                <tr>
-                  <td>Junior's Saturday Morning Mini Comp</td>
-                  <td>32</td>
-                  <td>Round Robin</td>
-                  <td><a href="#">Manage</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <tbody>
+              <tr>
+                <td><a href=''>Thursday Night Men's Singles</a></td>
+                <td>22</td>
+                <td>Single Elimination</td>
+              </tr>
+              <tr>
+                <td><a href=''>Mixed Doubles</a></td>
+                <td>16</td>
+                <td>Round Robin</td>
+              </tr>
+              <tr>
+                <td><a href=''>Junior's Saturday Morning Mini Comp</a></td>
+                <td>32</td>
+                <td>Round Robin</td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
       <div class="row">
         <div class="medium-11 card">
+          <h3>New Competition</h3>
+          <div class="row">
+            <form class="medium-6 medium-centered" action="index.html" method="post">
+              <label for="name">Competition Name</label>
+              <input type="text" name="name" placeholder="Something snazzy, like 'Thursday Night Singles'">
+              <label for="singles">Singles Or Doubles</label>
+              <input type="radio" name="singles" value="singles" checked> Singles<br/>
+              <input type="radio" name="singles" value="doubles"> Doubles<br/>
+              <input type="radio" name="singles" value="both"> <a href="" class='mexico' data-src='./assets/why-not-both-girl.gif' >Singles and Doubles</a><br/>
+            </form>
+            <div class="btn-container">
+              <a href="#" class="btn">Create Comp</a>
+            </div>
+
+          </div>
         </div>
       </div>
       <footer class='small-centered small-10 medium-9 large-10'>
@@ -127,25 +135,10 @@
 
   </div> <!--/row-->
 
-
-
-  <!--  <header class='header row'>
-      <div class="medium-6 columns">
-        <h1>Tennisboost</h1>
-      </div>
-      <div class="medium-6 columns">
-        <nav>
-          <ul>
-            <li>Log Out</li>
-            <li>Tom Hill</li>
-          </ul>
-        </nav>
-      </div>
-    </header>-->
-
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
+  <script src="js/vendor/Giflinks.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
   </body>
 </html>

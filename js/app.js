@@ -8,3 +8,8 @@ $(window).on("load, resize", function() {
       $(".sidebar-icon").removeClass("fa-2x");
     }
 });
+
+window.onload = function() {
+    var element = document.querySelector('.mexico');
+    GifLinks(element);
+};

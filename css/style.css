@@ -11,6 +11,12 @@ p {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #3297D3;
+}
+a:hover {
+  color: #424770;
+}
 body {
   background: #F1F3F5;
 }
@@ -68,79 +74,50 @@ body {
   padding: 0;
   font-size: 14px;
 }
-.header {
-  max-width: none;
-  background-color: #62DC91;
-  height: 50px;
-  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.5);
-}
-.header h1 {
-  font-size: 25px;
-  line-height: 50px;
-}
-.header nav {
-  float: right;
-}
-.header nav li {
-  line-height: 50px;
-  list-style-type: none;
-  display: inline;
-}
 .sep {
   width: 100%;
   height: 70px;
 }
 .card {
-  margin: 0 auto;
-  height: 300px;
   background: white;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.08), 0 7px 14px 1px rgba(50, 50, 93, 0.1);
   border-radius: 4px;
+  padding: 15px;
   margin: 0 auto 12px;
 }
-.card .card-head {
-  height: 50px;
-  background: #62DC91;
-  border-radius: 3px;
-  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  margin: 20px 15px 0;
-  padding: 15px;
-  color: white;
+.card h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #3ECF8E;
+  font-weight: 600;
+  padding: 0 0 12px;
 }
-.card .card-head h3 {
-  font-size: 20px;
-}
-.card .card-head .new-comp {
-  float: right;
-  padding: 10px 20px;
-  border-radius: 3px;
-  border: 2px solid white;
-}
-.comp-table {
-  margin: 20px 15px;
-}
-.comp-table table {
+table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   background: #fff;
   font-family: 'Roboto';
-  font-weight: 300;
   font-size: 15px;
+  margin-bottom: 20px;
 }
-.comp-table table th {
-  color: #62DC91;
+table th {
+  color: #615FF6;
   text-align: left;
   border-bottom: 1px solid #ddd;
   padding: 8px;
   font-weight: 400;
 }
-.comp-table table tr td {
+table tr td {
   padding: 12px 8px;
   border-top: 1px solid #ddd;
 }
-.comp-table table tr:first-child td {
+table tr:first-child td {
   border-top: none;
+}
+label {
+  font-weight: 600;
+  color: #615FF6;
 }
 footer p {
   text-align: center;
@@ -152,5 +129,38 @@ footer p .alpha-label {
   color: #F1F3F5;
   border-radius: 3px;
   padding: 2px;
+}
+.btn {
+  display: inline-block;
+  padding: 0 14px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+  background: #3ECF8E;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  transition: all .15s ease;
+  letter-spacing: .025em;
+}
+.btn:hover {
+  color: white;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn .white {
+  background: #3ECF8E;
+  color: white;
+}
+.btn-container {
+  text-align: center;
+}
+.mexico {
+  color: inherit;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
