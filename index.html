@@ -117,9 +117,21 @@
               <label for="name">Competition Name</label>
               <input type="text" name="name" placeholder="Something snazzy, like 'Thursday Night Singles'">
               <label for="singles">Singles Or Doubles</label>
-              <input type="radio" name="singles" value="singles" checked> Singles<br/>
-              <input type="radio" name="singles" value="doubles"> Doubles<br/>
-              <input type="radio" name="singles" value="both"> <a href="" class='mexico' data-src='./assets/why-not-both-girl.gif' >Singles and Doubles</a><br/>
+              <input type="radio" name="singles" value="singles" id='singlesSingles' checked> <label class='inline' for="singlesSingles">Singles</label>
+              <input type="radio" name="singles" value="doubles" id='singlesDoubles'> <label class='inline' for="singlesDoubles">Doubles</label>
+              <input type="radio" name="singles" value="both" id='singlesBoth'> <label class='inline' for="singlesBoth"><a href="" class='mexico' data-src='./assets/why-not-both-girl.gif' >Singles and Doubles</a></label>
+              <label for="type">Competition Type</label>
+              <select name="type">
+                <option value="poolDraws">Pool Draws</option>
+                <option value="roundRobin">Round Robin</option>
+                <option value="singleElim">Single Elimination Tournament</option>
+                <option value="doubleElim">Double Elimination Tournament</option>
+                <option value="nsew">North-South-East-West</option>
+              </select>
+              <label for="addPlayer">Add Player</label>
+              <input type="text" name="addPlayer" placeholder="Roger Federer">
+              <div class="newPlayerField"></div> <!-- used to specify where the new field appears on click -->
+              <button onclick='addPlayerField()' class='button small' type="button" name="addPlayerBtn" id='addPlayerBtn'>Add Player</button>
             </form>
             <div class="btn-container">
               <a href="#" class="btn">Create Comp</a>
