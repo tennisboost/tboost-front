@@ -166,9 +166,9 @@ footer p .alpha-label {
 .btn:active {
   transform: translateY(1px);
 }
-.btn .white {
-  background: #3ECF8E;
-  color: white;
+.btn.white {
+  background: #F1F3F5;
+  color: #615FF6;
 }
 .btn-container {
   text-align: center;
