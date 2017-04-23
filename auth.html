@@ -28,7 +28,6 @@
         </form>
       </div>
     </div>
-    <div class="background"></div>
     <script src="js/vendor/jquery.js"></script>
     <script type="text/javascript">
     // TODO: Convert to canvas... at the moment creating <b></b> elements...
@@ -43,8 +42,11 @@ var ballCount = 10,
 $(function() {
 //initBalls();
 
-  $('.background').click(function(e){
+  $('body').click(function(e){
     initBall(e);
+  })
+  $('.auth-card').click(function(e){
+    e.stopPropagation(); // prevents ball spawn on click of the auth-card pane
   })
 
 
