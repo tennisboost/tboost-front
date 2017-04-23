@@ -2,6 +2,10 @@
 // Initialise Foundation
 $(document).foundation();
 
+// Adds active class to the menu item w/ corresponding href to the current url
+// (https://css-tricks.com/snippets/jquery/add-active-navigation-class-based-on-url/)
+$('.sidebar-nav li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+
 // Convert font-awesome sidebar icons to larger form w/ smaller devices
 $(window).on("load, resize", function() {
     var viewportWidth = $(window).width();
@@ -37,7 +41,7 @@ $('#createComp').click(function () {
   // add each of the players to 'playerNames'
   var playerNames = []
   $('input[name=addPlayer]').each(function(){
-    playerNames.push($(this).val());
+    if ($(this).val() !== "") playerNames.push($(this).val())
   })
 
   // collect data and prepare to send
@@ -47,5 +51,7 @@ $('#createComp').click(function () {
     "type": $('select[name=type]').val(),
     "players": playerNames
   }
-  console.log(jsonToSend)
+  console.log(JSON.stringify(jsonToSend))
+
+  // TODO: POST jsonToSend to server and redirect
 })
